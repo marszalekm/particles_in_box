@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-# For Python 3.5.2, Numpy 1.14.3
-# Author: Michal Marszalek
-# Script generates system of moving particles (points) confined in a box of a chosen size. When points reach (defined) vicinity of other ones, they form aggregates and continue moving together. Results are stored in xyz file.
-
 import numpy as np
 from itertools import combinations
 
