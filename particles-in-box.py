@@ -3,9 +3,10 @@
 import numpy as np
 from itertools import combinations
 
-class particles_in_box():
 
-    def __init__(self, n_mol = 10, n_step = 1000, boundaries = (0.0, 30.0), rad = 2):
+class ParticlesInBox:
+
+    def __init__(self, n_mol=10, n_step=1000, boundaries=(0.0, 30.0), rad=2):
         self.n_mol = n_mol  # Number of molecules
         self.n_step = n_step  # Number of steps
         self.boundaries = boundaries  # Box range
@@ -52,7 +53,7 @@ class particles_in_box():
 
     def generate_step(self, dictionary, path, step):
         """
-        Addition points to dictionary and setting setting final form of particular step (coordinates)
+        Addition points to dictionary and setting final form of particular step (coordinates).
         """
         for i in range(self.n_mol):
             if i not in dictionary:
@@ -77,7 +78,6 @@ class particles_in_box():
 
         return path
 
-
     def step_to_file(self, pstep, path, xyz):
         """
         Saves current step to file.
@@ -101,7 +101,7 @@ class particles_in_box():
         """
         origin, xyz = self.create_origin()
         path = origin
-        pstep = 0 #Present step
+        pstep = 0  # Present step
         while pstep < self.n_step - 1:
             pstep += 1
             step = np.empty(shape=(0, 3), dtype=float)
@@ -112,5 +112,6 @@ class particles_in_box():
             self.print_step(pstep)
         xyz.close()
 
-simulation = particles_in_box()
+
+simulation = ParticlesInBox()
 simulation.run_simulation()
