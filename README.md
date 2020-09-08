@@ -5,10 +5,10 @@ When points reach (defined) vicinity of other ones, they form aggregates and con
 Results are stored in xyz file. For visualization I recommend VMD or PyMOL.
 
 General workflow:
-1. Points of origin are generated and added to the file.
-2. Loop starts and algorithm checks distances between all points.
-3. Random vectors are generated.
-4. Particles that are in given vicinity, from now will move with the same vector.
-5. Conditions of periodic boundary conditions are checks i.e. so the points won't cross given box size.
-6. Step with coordinates is saved to the file.
+* Points of origin are generated and added to the file.
+* Loop starts and algorithm checks distances between all points.
+* Random vectors are generated.
+* Particles that are in given vicinity, from now will move with the same vector.
+* Conditions of periodic boundary conditions are checks i.e. so the points won't cross given box size.
+* Step with coordinates is saved to the file.
 
