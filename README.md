@@ -8,7 +8,7 @@ General workflow:
 * Points of origin are generated and added to the file.
 * Loop starts and algorithm checks distances between all points.
 * Random vectors are generated.
-* Particles that are in given vicinity, from now will move with the same vector.
+* Particles that are in given vicinity from now will move with the same vector.
 * Conditions of periodic boundary conditions are checks i.e. so the points won't cross given box size.
 * Step with coordinates is saved to the file.
 
