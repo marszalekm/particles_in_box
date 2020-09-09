@@ -9,6 +9,6 @@ General workflow:
 * Loop starts and algorithm checks distances between all points.
 * Random vectors are generated.
 * Particles that are in given vicinity from now will move with the same vector.
-* Conditions of periodic boundary conditions are checks i.e. so the points won't cross given box size.
+* Conditions of periodic boundary conditions are checked i.e. so the points won't cross given box size.
 * Step with coordinates is saved to the file.
 
