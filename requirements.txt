@@ -1,2 +1,2 @@
-Numpy==1.14.3
+Numpy==1.22.0
 matplotlib==3.0.3
